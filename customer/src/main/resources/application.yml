@@ -1,0 +1,17 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: customer
+  datasource:
+    password: password
+    url: jdbc:mysql://localhost:3306/customer?autoReconnect=true&useSSL=false&createDatabaseIfNotExist=true
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
